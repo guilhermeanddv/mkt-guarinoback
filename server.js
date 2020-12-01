@@ -20,5 +20,5 @@ requireDir('./src/app/models'); // Usando a biblioteca require-dir para registra
 
 app.use("/api", require('./src/routes')); // Declarando todas as rotas
 
-app.listen(3001);
+app.listen(process.env.PORT || 3001);
 console.log('\x1b[36m%s\x1b[0m','Server inciado em localhost:3001');
